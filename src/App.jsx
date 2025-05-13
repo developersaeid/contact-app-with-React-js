@@ -1,10 +1,15 @@
+import Contacts from "./components/Contacts"
+import ContactsList from "./components/ContactsList"
 import Header from "./components/Header"
+
 
 function App() {
 
   return (
     <>
-      <Header/>
+      <Header />
+      <Contacts />
+      <ContactsList />
     </>
   )
 }
