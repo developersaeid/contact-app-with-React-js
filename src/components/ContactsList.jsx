@@ -1,4 +1,3 @@
-
 function ContactsList({props}) {
   return (
     <div>
