@@ -1,7 +1,11 @@
-function ContactsList({props}) {
+
+function ContactsList({contacts}) {
   return (
     <div>
-      <h5>ContactList</h5>
+      <h3>Contact List</h3>
+      <ul>
+        {contacts.map(contact=>(<li>{contact.name}</li>))}
+      </ul>
     </div>
   )
 }
