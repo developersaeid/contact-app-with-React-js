@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ContactsList from "./ContactsList";
 import inputs from "../constants/input.js";
+import { v4 } from "uuid";
 
 
 function Contacts() {
@@ -31,8 +32,10 @@ function Contacts() {
       return;
     }
     setAlert("");
-    setContacts((contacts) => [...contacts, contact]);
+    const newContact = {...contact,id:v4() } // create new contact with id
+    setContacts((contacts) => [...contacts, newContact]);
     setContact({
+      id:"",
       name: "",
       lastName: "",
       email: "",
@@ -52,34 +55,6 @@ function Contacts() {
             onChange={changeHandler}
           />
         ))}
-        <input
-          type="text"
-          placeholder="Name"
-          name="name"
-          value={contact.name}
-          onChange={changeHandler}
-        />
-        <input
-          type="text"
-          placeholder="Last Name"
-          name="lastName"
-          value={contact.lastName}
-          onChange={changeHandler}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          name="email"
-          value={contact.email}
-          onChange={changeHandler}
-        />
-        <input
-          type="number"
-          placeholder="Phone"
-          name="phone"
-          value={contact.phone}
-          onChange={changeHandler}
-        />
         <button onClick={addHandler}>Add Contact</button>
       </div>
       <div>{alert && <p>{alert}</p>}</div>
