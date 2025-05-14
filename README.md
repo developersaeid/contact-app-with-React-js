@@ -19,14 +19,16 @@ You can add, see, and delete contacts. Built with React.
 </ul>
 <hr/>
 # 📂 Project Structure
-src/
+<pre>
+  ```src/
 ├── components/
 │   ├── Contacts.jsx        # Main component
 │   ├── ContactsList.jsx    # Renders list of contacts
 │   └── ContactItem.jsx     # Renders a single contact
 ├── constants/
 │   └── input.js            # Input fields config
-└── App.js
+└── App.js```
+</pre>
 <hr/>
 # 🤓 Notes
 <ul>
@@ -36,6 +38,7 @@ src/
 </ul>
 <hr/>
 # 📸 Demo
+
 <img src="https://github.com/developersaeid/contact-app/blob/main/Screenshot%202025-05-14%20115651.png?raw=true"/>
 
 
