@@ -14,7 +14,7 @@ You can add, see, and delete contacts. Built with React.
 # 🛠️ Built With
 <ul>
   <li>React (Functional Components + Hooks)</li>
-  <li><a href="https://www.npmjs.com/package/uuid">uuid</a>for generating unique contact IDs</li>
+  <li><a href="https://www.npmjs.com/package/uuid">uuid</a> for generating unique contact IDs</li>
   <li>Clean and readable component structure</li>
 </ul>
 <hr/>
@@ -38,7 +38,7 @@ You can add, see, and delete contacts. Built with React.
 </ul>
 <hr/>
 # 📸 Demo
-
+<br/>
 <img src="https://github.com/developersaeid/contact-app/blob/main/Screenshot%202025-05-14%20115651.png?raw=true"/>
 
 
