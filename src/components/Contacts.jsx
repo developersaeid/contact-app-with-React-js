@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { v4 } from "uuid";
+
 import ContactsList from "./ContactsList";
 import inputs from "../constants/input.js";
-import { v4 } from "uuid";
+
 import styles from "./Contacts.module.css"
 
 
@@ -45,7 +47,7 @@ function Contacts() {
     });  // reset contact state
   };
 
-  const deleteHandler = (id) => {
+  const deleteHandler = (id) => { // lifting state up
     const newContacts = contacts.filter(contact => contact.id !== id); // filter contacts array
     setContacts(newContacts);
   }
